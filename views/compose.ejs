@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/composeCSS.css">
+<%- include('partials/header') %>
+
+<h1>Compose</h1>
+<form class="composeCSS" action="/compose" method="POST">
+    <label for="PostTitle">Title</label>
+    <input type="text" name="PostTitle" value="" placeholder="please enter the Title of your post">
+    <label for="PostText">Post</label>
+    <textarea  name="PostText" value="" placeholder="please write what your think" rows="4" cols="50"></textarea>
+    <button class="myButton" type="submit" name="button" value="">Publish</button>
+</form>
+<%- include('partials/footer') %>
+

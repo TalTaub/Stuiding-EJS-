@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<h1>Home</h1>
+<p><%= headerContect %></p>
+<% for (let i = 0; i<Content.length; i++){   %>
+    <div class="mainHomeDiv">
+    <h1> <%= Content[i].Title %> </h1>
+    <p> <%= Content[i].Text.slice(0,140)+"..." %> </p>
+    <a href= "<%-"posts/"+Content[i].Title %>" > Read More...</a>
+</div>
+<br>      
+<%};%>
+
+<%- include('partials/footer') %>
